@@ -1,0 +1,19 @@
+<Background>:
+    id: main_win
+    orientation: "vertical"
+    spacing: 10
+    space_x: self.size[0]/3
+
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        Rectangle:
+            source:'nebo.jpg'
+            size: root.width, root.height
+            pos: self.pos
+    Button:
+        text: "Hello!"
+        pos_hint :{'center_x':0.5, 'center_y':0.5}
+        size_hint: .30, 0
+        background_color: (0.06, .36, .4, .675)
+        font_size: 30
